@@ -12,10 +12,15 @@ my_label.pack()
 
 # Button
 def button_clicked():
-    my_label.config(text="Button got clicked")
+    # my_label.config(text="Button got clicked")
+    my_label.config(text=input_name.get())
 
 
 button = Button(text="Click me", command=button_clicked)
 button.pack()
+
+# Entry
+input_name = Entry(width=10)
+input_name.pack()
 
 window.mainloop()
