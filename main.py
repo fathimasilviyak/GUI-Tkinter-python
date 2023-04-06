@@ -86,6 +86,7 @@ radiobutton2.pack()
 
 # Listbox
 def listbox_used(event):
+    # Get current selection from listbox
     print(listbox.get(listbox.curselection()))
 
 
