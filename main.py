@@ -36,5 +36,11 @@ text.insert(END, "Some text for multi-line text entry")
 print(text.get("1.0", END))
 text.pack()
 
+# Spinbox
+def spinbox_clicked():
+    print(spinbox.get())
+spinbox = Spinbox(from_=0, to=10, width=10, command=spinbox_clicked)
+spinbox.pack()
+
 
 window.mainloop()
