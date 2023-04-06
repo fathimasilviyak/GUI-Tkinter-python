@@ -69,4 +69,18 @@ checkbox = Checkbutton(text="Is on?", variable=checked_state, command=checkbox_u
 print(checked_state.get())
 checkbox.pack()
 
+
+# Radiobutton
+def radio_used():
+    print(radio_state.get())
+
+
+# Variable to hold on to which radio button is checked
+radio_state = IntVar()
+radiobutton1 = Radiobutton(text="option1", value=1, variable=radio_state, command=radio_used)
+radiobutton2 = Radiobutton(text="option2", value=2, variable=radio_state, command=radio_used)
+
+radiobutton1.pack()
+radiobutton2.pack()
+
 window.mainloop()
